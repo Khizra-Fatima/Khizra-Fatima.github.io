@@ -1,0 +1,705 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  line-height: normal;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+/***********Actual Styling***********/
+header {
+  width: 100%;
+  height: 65vh;
+  background: linear-gradient(rgba(104, 103, 103, 0.8), rgba(66, 66, 66, 0.8));
+  background: linear-gradient(rgba(99, 98, 98, 0.8), rgba(138, 138, 138, 0.8));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  /***********Navbar-Styling***********/
+  /***********Hero-Section-Styling***********/
+}
+header .navbar {
+  padding: 0 !important;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf9f9;
+  color: rgb(0, 0, 0);
+}
+header .navbar .brand-title .logo {
+  margin: 0.5rem 0.5rem 0.5rem 2rem;
+  font-size: 2.9rem;
+  color: black;
+}
+header .navbar .brand-title .logo span {
+  color: #B90F0F;
+}
+header .navbar .navbar-links {
+  height: 100%;
+  font-size: 1.3rem;
+}
+header .navbar .navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header .navbar .navbar-links li {
+  padding: 0.7rem;
+}
+header .navbar .navbar-links li .help {
+  color: rgb(71, 70, 70);
+}
+header .navbar .navbar-links li .login {
+  color: #B90F0F;
+  background: #faf9f9;
+  padding: 0.3rem 0.9rem 0.44rem 0.9rem;
+  border: 2px solid #B90F0F;
+}
+header .navbar .navbar-links li .signup {
+  color: #E5E5E5;
+  background: #B90F0F;
+  padding: 0.4rem 0.8rem 0.53rem 0.8rem;
+}
+header .navbar .toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+header .navbar .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  header .navbar {
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .navbar .toggle-button {
+    display: flex;
+  }
+  header .navbar .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  header .navbar .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header .navbar .navbar-links li {
+    text-align: center;
+  }
+  header .navbar .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  header .navbar .navbar-links.active {
+    display: flex;
+  }
+}
+header .Hero-section {
+  width: 100%;
+  color: white;
+  opacity: 0.9;
+  padding: 0;
+  margin: 0 !important;
+}
+header .Hero-section .about-bg-img {
+  display: block;
+  height: 65vh;
+  width: 100%;
+}
+header .Hero-section .about-shoe-img {
+  display: block;
+  opacity: 80%;
+  position: absolute;
+  top: 16%;
+  right: 6%;
+  z-index: -1 !important;
+  width: 560px;
+  height: 470px;
+}
+header .Hero-section .Hero-text {
+  width: 85%;
+  margin: 0;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .Hero-section .Hero-text h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+header .Hero-section .Hero-text h1 span {
+  color: #a80c0c;
+  font-weight: 400;
+}
+header .Hero-section .Hero-text .divider {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-top: 1rem;
+}
+header .Hero-section .Hero-text .pri-para .para {
+  margin-top: 0.7rem;
+}
+
+/***********Body-Styling***********/
+main {
+  /***********Description-Styling***********/
+  /***********Founder-Styling***********/
+  /***********Statistics-Styling***********/
+  /***********Team-Styling***********/
+  /***********Business-Partners-Styling***********/
+  /***********Newsletter-Styling***********/
+}
+main .description {
+  margin: 8em 0 9em 0;
+  color: rgb(54, 54, 54);
+}
+main .description .container {
+  max-width: 83%;
+}
+main .description h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: black;
+}
+main .description p {
+  font-size: 0.97rem;
+  line-height: 1.3rem;
+}
+main .Founder .container {
+  max-width: 82%;
+}
+main .Founder .img-div .pri-img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+main .Founder .img-div .sec-img {
+  display: none;
+}
+main .Founder .founder-text {
+  width: 49%;
+  padding: 0 0 0 1rem;
+}
+main .Founder .founder-text h1 {
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 3rem;
+  color: black;
+}
+main .Founder .founder-text p {
+  color: rgb(54, 54, 54);
+  font-size: 0.968rem;
+}
+main .Founder .founder-text .cta-button {
+  margin-top: 2em;
+}
+main .Founder .founder-text .cta-button a {
+  color: #fffdfd;
+  background-color: #B90F0F;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.3rem;
+}
+main .Statistics {
+  width: 100%;
+  margin: 8rem 0rem;
+}
+main .Statistics .stats-div {
+  max-width: 1200px;
+}
+main .Statistics .stats-div .stats {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgb(207, 187, 187);
+  padding-top: 3rem;
+  border: 13px solid rgba(185, 15, 15, 0.9);
+}
+main .Statistics .stats-div .stats .para1 {
+  color: rgb(27, 25, 25);
+  font-size: 2.6rem;
+}
+main .Statistics .stats-div .stats .para2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #B90F0F;
+}
+main .team .text-team.container {
+  max-width: 94% !important;
+}
+main .team .text-team.container h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: black;
+}
+main .team .text-team.container p {
+  margin: 0.5rem 0 6.5rem 0;
+  color: rgb(54, 54, 54);
+  font-size: 0.965rem;
+}
+main .team .img-div,
+main .team .img-div2,
+main .team .img-div3,
+main .team .img-div4 {
+  background: linear-gradient(rgba(192, 72, 72, 0.8), rgba(185, 15, 15, 0.9));
+  height: 430px;
+  padding: 0.6rem;
+  box-shadow: 2px 2px 8px rgb(141, 140, 140);
+}
+main .team .img-div img,
+main .team .img-div2 img,
+main .team .img-div3 img,
+main .team .img-div4 img {
+  width: 300px;
+}
+main .team .img-div .name,
+main .team .img-div2 .name,
+main .team .img-div3 .name,
+main .team .img-div4 .name {
+  margin: 0.7rem 0 -0.2rem 0;
+  color: #E5E5E5;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+main .team .img-div .role,
+main .team .img-div2 .role,
+main .team .img-div3 .role,
+main .team .img-div4 .role {
+  margin-bottom: 1.3rem;
+  color: #E5E5E5;
+  font-size: 1.1rem;
+}
+main .team .img-div .social-media-icons,
+main .team .img-div2 .social-media-icons,
+main .team .img-div3 .social-media-icons,
+main .team .img-div4 .social-media-icons {
+  width: 150px;
+}
+main .team .img-div .social-media-icons .google,
+main .team .img-div .social-media-icons .facebook,
+main .team .img-div .social-media-icons .linkedin,
+main .team .img-div .social-media-icons .twitter,
+main .team .img-div2 .social-media-icons .google,
+main .team .img-div2 .social-media-icons .facebook,
+main .team .img-div2 .social-media-icons .linkedin,
+main .team .img-div2 .social-media-icons .twitter,
+main .team .img-div3 .social-media-icons .google,
+main .team .img-div3 .social-media-icons .facebook,
+main .team .img-div3 .social-media-icons .linkedin,
+main .team .img-div3 .social-media-icons .twitter,
+main .team .img-div4 .social-media-icons .google,
+main .team .img-div4 .social-media-icons .facebook,
+main .team .img-div4 .social-media-icons .linkedin,
+main .team .img-div4 .social-media-icons .twitter {
+  cursor: pointer;
+}
+main .team .img-div .social-media-icons .google i,
+main .team .img-div .social-media-icons .facebook i,
+main .team .img-div .social-media-icons .linkedin i,
+main .team .img-div .social-media-icons .twitter i,
+main .team .img-div2 .social-media-icons .google i,
+main .team .img-div2 .social-media-icons .facebook i,
+main .team .img-div2 .social-media-icons .linkedin i,
+main .team .img-div2 .social-media-icons .twitter i,
+main .team .img-div3 .social-media-icons .google i,
+main .team .img-div3 .social-media-icons .facebook i,
+main .team .img-div3 .social-media-icons .linkedin i,
+main .team .img-div3 .social-media-icons .twitter i,
+main .team .img-div4 .social-media-icons .google i,
+main .team .img-div4 .social-media-icons .facebook i,
+main .team .img-div4 .social-media-icons .linkedin i,
+main .team .img-div4 .social-media-icons .twitter i {
+  font-size: 1.4rem;
+  padding-top: 0.73rem;
+  color: #E5E5E5;
+}
+main .business-partners {
+  margin-top: 10rem;
+  background-color: #E5E5E5;
+  padding: 0rem 0 0.8rem 0;
+}
+main .business-partners img {
+  margin-top: 1.2rem;
+}
+main .newsletter {
+  width: 100%;
+  height: auto;
+  margin: 150px 0 0 0;
+}
+main .newsletter .news-input {
+  border-radius: 100px 0px 0px 100px !important;
+  min-width: 150px;
+  min-width: 45px;
+  height: 45px;
+  font-size: 0.96rem;
+  padding-left: 1.5rem;
+}
+main .newsletter .news-input:focus {
+  outline: 0;
+  box-shadow: none;
+}
+main .newsletter h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+main .newsletter .input-group-text {
+  color: black;
+  background: #B90F0F;
+  border-radius: 0 100px 100px 0 !important;
+  min-width: 130px;
+  height: 45px;
+  min-width: 40px;
+  cursor: pointer;
+}
+
+/***********Footer Styling***********/
+.Footer {
+  margin: 150px 0 0 0;
+  width: 100%;
+  height: auto;
+  padding: 70px 0 0 0;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.Footer p {
+  color: #313030;
+}
+.Footer .footer_first_comp h1 span {
+  color: #B90F0F;
+}
+.Footer .footer_first_comp .icons {
+  margin-left: -13.2rem;
+}
+.Footer .footer_first_comp .icons i {
+  color: #B90F0F;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.Footer .footer_first_comp .icons .container {
+  max-width: 250px;
+}
+.Footer .footer_second_comp h3 {
+  color: #af0d0d;
+}
+.Footer .footer_second_comp li a {
+  color: #313030;
+}
+.Footer .footer_third_comp {
+  margin-top: -2em;
+}
+.Footer .footer_third_comp iframe {
+  width: 100%;
+  height: 300px;
+}
+.Footer .footer_fourth_comp {
+  background: #dddbdb;
+  height: 60px;
+  padding-top: 1.5em;
+  font-size: 1em;
+}
+.Footer .footer_fourth_comp p {
+  color: #8d0f0f;
+}
+
+/***********Media-Queries***********/
+@media (max-width: 1600px) {
+  main .Founder .container {
+    max-width: 90%;
+  }
+  main .Founder .founder-text h1 {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1400px) {
+  main .Founder .founder-text h1 {
+    margin-top: 1.5rem;
+    font-size: 2.8rem;
+  }
+  main .Founder .founder-text p {
+    color: rgb(54, 54, 54);
+    font-size: 0.965rem;
+  }
+  main .Founder .founder-text .cta-button {
+    margin-top: 1.5em;
+  }
+  main .Founder .founder-text .cta-button a {
+    font-size: 1.25rem;
+    padding: 0.6rem 1.3rem;
+  }
+  main .team h1 {
+    font-size: 2.9rem;
+  }
+  main .team p {
+    font-size: 0.9rem;
+    color: rgb(83, 80, 80);
+  }
+  main .team .img-div,
+main .team .img-div2,
+main .team .img-div3,
+main .team .img-div4 {
+    height: 370px;
+    padding: 0.45rem 0.55rem 0.55rem 0.55rem;
+  }
+  main .team .img-div img,
+main .team .img-div2 img,
+main .team .img-div3 img,
+main .team .img-div4 img {
+    width: 250px;
+  }
+  main .team .img-div .name,
+main .team .img-div2 .name,
+main .team .img-div3 .name,
+main .team .img-div4 .name {
+    font-size: 1.2rem;
+  }
+  main .team .img-div .role,
+main .team .img-div2 .role,
+main .team .img-div3 .role,
+main .team .img-div4 .role {
+    font-size: 1.05rem;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -9.8rem;
+  }
+}
+@media (max-width: 1300px) {
+  header .Hero-section .about-shoe-img {
+    top: 18%;
+    right: 6%;
+    width: 510px;
+    height: 420px;
+  }
+  main .Founder .container {
+    max-width: 90%;
+  }
+  main .Founder .img-div .pri-img {
+    display: none;
+  }
+  main .Founder .img-div .sec-img {
+    display: block;
+    width: 95%;
+    height: auto;
+    padding: 0;
+  }
+  main .Founder .founder-text {
+    padding: 0;
+  }
+  main .Founder .founder-text h1 {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  main .team p {
+    margin: 0.5rem 0 4rem 0;
+  }
+  main .team .img-con {
+    max-width: 740px;
+  }
+  main .team .img-div,
+main .team .img-div2,
+main .team .img-div3,
+main .team .img-div4 {
+    height: 430px;
+    padding: 0.6rem;
+    margin-top: 1.7rem;
+  }
+  main .team .img-div img,
+main .team .img-div2 img,
+main .team .img-div3 img,
+main .team .img-div4 img {
+    width: 300px;
+  }
+  main .team .img-div .name,
+main .team .img-div2 .name,
+main .team .img-div3 .name,
+main .team .img-div4 .name {
+    font-size: 1.3rem;
+  }
+  main .team .img-div .role,
+main .team .img-div2 .role,
+main .team .img-div3 .role,
+main .team .img-div4 .role {
+    font-size: 1.1rem;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -5.8rem;
+  }
+}
+@media (max-width: 990px) {
+  main .Founder .Founder-components {
+    text-align: center;
+  }
+  main .Founder .container {
+    max-width: 78%;
+  }
+  main .Founder .img-div {
+    text-align: center;
+  }
+  main .Founder .img-div .sec-img {
+    width: 70%;
+    margin: auto !important;
+  }
+  main .Founder .founder-text {
+    width: 100%;
+  }
+  main .Founder .founder-text h1 {
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 990px) {
+  main .Statistics .stats-div {
+    max-width: 890px;
+  }
+  main .Statistics .stats-div .stats {
+    width: 200px;
+    height: 200px;
+    border: 10px solid rgba(185, 15, 15, 0.9);
+  }
+  main .Statistics .stats-div .stats .para1 {
+    font-size: 2.3rem;
+  }
+  main .Statistics .stats-div .stats .para2 {
+    font-size: 1.5rem;
+  }
+  .Footer {
+    padding: 60px 0 0 0;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -8.3rem;
+  }
+  .Footer .footer_third_comp {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 900px) {
+  main .Statistics .stats-div {
+    max-width: 750px;
+  }
+  main .Statistics .stats-div .stats {
+    width: 170px;
+    height: 170px;
+    border: 8px solid rgba(185, 15, 15, 0.9);
+  }
+  main .Statistics .stats-div .stats .para1 {
+    font-size: 2rem;
+  }
+  main .Statistics .stats-div .stats .para2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  main .Statistics .stats-div {
+    max-width: 500px;
+  }
+  main .Statistics .stats-div .stats {
+    width: 210px;
+    height: 210px;
+    border: 10px solid rgba(185, 15, 15, 0.9);
+    margin-top: 2rem;
+  }
+  main .Statistics .stats-div .stats .para1 {
+    font-size: 2.4rem;
+  }
+  main .Statistics .stats-div .stats .para2 {
+    font-size: 1.6rem;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -2.7rem;
+  }
+}
+@media (max-width: 580px) {
+  header .Hero-section .about-shoe-img {
+    display: none;
+  }
+  main .Founder .founder-text h1 {
+    margin-top: 1.5rem;
+    font-size: 2.4rem;
+  }
+  main .Founder .founder-text p {
+    color: rgb(77, 76, 76);
+    font-size: 0.93rem;
+  }
+  main .Founder .img-div .sec-img {
+    display: block;
+    width: 90%;
+  }
+  main .Statistics .stats-div {
+    max-width: 200px;
+  }
+  .Footer {
+    padding: 50px 0 0 0;
+  }
+  .Footer .container {
+    max-width: 375px;
+  }
+  .Footer .footer_first_comp {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .Footer .footer_first_comp h1 {
+    font-size: 2.2rem;
+  }
+  .Footer .footer_first_comp p {
+    font-size: 0.9rem;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -0.3rem;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  header .navbar .navbar-links li .help:hover,
+header .navbar .navbar-links li .login:hover {
+    color: #B90F0F;
+  }
+  header .navbar .navbar-links li .signup:hover {
+    color: #E5E5E5;
+  }
+  main .Founder .founder-text .cta-button a:hover {
+    background-color: #df0f0f;
+  }
+  .Footer .footer_first_comp .icons i:hover {
+    color: #8b0707;
+  }
+  .Footer .footer_second_comp li a:hover {
+    color: #B90F0F;
+  }
+}/*# sourceMappingURL=About-style.css.map */

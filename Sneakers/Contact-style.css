@@ -1,0 +1,564 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  line-height: normal;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 1920px;
+}
+
+/***********Actual Styling***********/
+header {
+  width: 100%;
+  height: 65vh;
+  background: linear-gradient(rgba(192, 72, 72, 0.8), rgba(185, 15, 15, 0.8)) url(Images/Contact-img.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("Images/Contact-img.png");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+header .navbar {
+  padding: 0 !important;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf9f9;
+  color: rgb(0, 0, 0);
+}
+header .navbar .brand-title .logo {
+  margin: 0.5rem 0.5rem 0.5rem 2rem;
+  font-size: 2.9rem;
+  color: black;
+}
+header .navbar .brand-title .logo span {
+  color: #B90F0F;
+}
+header .navbar .navbar-links {
+  height: 100%;
+  font-size: 1.3rem;
+}
+header .navbar .navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header .navbar .navbar-links li {
+  padding: 0.7rem;
+}
+header .navbar .navbar-links li .help {
+  color: rgb(71, 70, 70);
+}
+header .navbar .navbar-links li .login {
+  color: #B90F0F;
+  background: #faf9f9;
+  padding: 0.3rem 0.9rem 0.44rem 0.9rem;
+  border: 2px solid #B90F0F;
+}
+header .navbar .navbar-links li .signup {
+  color: #E5E5E5;
+  background: #B90F0F;
+  padding: 0.4rem 0.8rem 0.53rem 0.8rem;
+  margin-right: 0.8rem;
+}
+header .navbar .toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+header .navbar .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  header .navbar {
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .navbar .toggle-button {
+    display: flex;
+  }
+  header .navbar .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  header .navbar .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header .navbar .navbar-links li {
+    text-align: center;
+  }
+  header .navbar .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  header .navbar .navbar-links.active {
+    display: flex;
+  }
+}
+header .Hero-section {
+  width: 100%;
+  position: absolute;
+  top: 43%;
+  color: white;
+  opacity: 0.9;
+  padding: 0 1rem;
+}
+header .Hero-section .container {
+  max-width: 86%;
+}
+header .Hero-section .Hero-text h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+header .Hero-section .Hero-text h1 span {
+  color: #B90F0F;
+  font-weight: 400;
+}
+header .Hero-section .Hero-text .divider {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-top: 1rem;
+}
+header .Hero-section .Hero-text .pri-para .para {
+  margin-top: 0.7rem;
+}
+
+/***********Body Styling***********/
+main .Contact-us {
+  margin: 100px 0 150px 0;
+  width: 100%;
+}
+main .Contact-us .container {
+  max-width: 920px;
+}
+main .Contact-us .first-part .graphic {
+  width: 40%;
+}
+main .Contact-us .first-part h2 {
+  color: black;
+  font-size: calc(1.5em + 1vw);
+  text-align: left;
+  margin: 3.3rem 0 0.2rem 0;
+  font-weight: 400;
+}
+main .Contact-us .first-part form input {
+  width: 510px;
+  height: 50px;
+  border-radius: 0.9rem;
+  border: none;
+  background-color: #E5E5E5;
+  margin: 1.2rem 0 0 0;
+  padding-left: 20px;
+  color: rgb(87, 80, 80);
+}
+main .Contact-us .first-part form input:focus {
+  outline: 0;
+  color: rgb(87, 80, 80);
+  box-shadow: 0 2px 0 0 #B90F0F;
+}
+main .Contact-us .first-part form .message {
+  height: 55px;
+  padding: 1.5rem 0rem 10.8rem 20px;
+}
+main .Contact-us .first-part .send-btn {
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  margin-top: 1rem;
+  padding: 0.5rem 1.8rem;
+  width: 140px;
+  border-radius: 25px;
+  background-color: #B90F0F;
+  font-size: 1.2rem;
+  border: 0;
+  cursor: pointer;
+}
+main .Contact-us .first-part .send-btn a {
+  color: #E5E5E5;
+}
+main .Contact-us .second-part {
+  margin: 4.8rem 0 0 0.8rem;
+  background: rgba(180, 11, 11, 0.9);
+  width: 350px;
+  border-radius: 2rem;
+  padding: 2rem 0 0 0;
+}
+main .Contact-us .second-part h2 {
+  font-weight: 400;
+  color: white;
+  font-size: 2.2rem;
+}
+main .Contact-us .second-part .divider-line {
+  width: 250px;
+  border: 1px solid #E5E5E5;
+  margin-left: 3rem;
+  margin-bottom: 1.8rem;
+}
+main .Contact-us .second-part ul {
+  padding: 0 0 1rem 0;
+}
+main .Contact-us .second-part ul li {
+  color: #E5E5E5;
+  margin-top: 0.3rem;
+}
+main .Contact-us .second-part ul li i {
+  color: #E5E5E5;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
+main .Contact-us .second-part ul li .number {
+  transform: rotate(350deg);
+}
+main .Contact-us .second-part .icons {
+  background: #E5E5E5;
+  border-radius: 0 0 1.8rem 1.8rem;
+  padding-bottom: 1.5rem;
+}
+main .Contact-us .second-part .icons .container {
+  max-width: 300px;
+}
+main .Contact-us .second-part .icons li {
+  color: #B90F0F;
+  margin: 0 0 1rem 0;
+  padding: 0.6rem 0 0 0;
+  font-size: 1.1rem;
+}
+main .Contact-us .second-part .icons i {
+  font-size: 1.6rem;
+  color: #B90F0F;
+  cursor: pointer;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 0.85rem;
+  box-shadow: 2px 2px 8px rgb(240, 157, 157);
+}
+main .Cta {
+  width: 100%;
+  background: linear-gradient(rgba(192, 72, 72, 0.8), rgba(185, 15, 15, 0.9)) url(Images/cta.png);
+  background: linear-gradient(rgba(192, 72, 72, 0.8), rgba(185, 15, 15, 0.9)), url("Images/cta.png");
+  padding: 2.3rem 0 1.8rem 0;
+}
+main .Cta .container {
+  max-width: 98%;
+}
+main .Cta h1 {
+  color: #f1f1f1;
+}
+main .Cta h2 {
+  color: #c7c2c2;
+}
+main .particular-topic {
+  margin: 170px 0 200px 0;
+}
+main .particular-topic h1 {
+  font-weight: 400;
+  margin-bottom: 3rem;
+  font-size: calc(2em + 1vw);
+}
+main .particular-topic .all-components {
+  background: #B90F0F;
+  height: auto;
+  padding: 0 0 3% 0;
+}
+main .particular-topic .all-components .container {
+  max-width: 94%;
+}
+main .particular-topic .all-components .first-component,
+main .particular-topic .all-components .second-component,
+main .particular-topic .all-components .third-component {
+  background: white;
+  padding: 0 12% 15% 12%;
+  cursor: pointer;
+  margin-left: 2.5%;
+}
+main .particular-topic .all-components .first-component i,
+main .particular-topic .all-components .second-component i,
+main .particular-topic .all-components .third-component i {
+  font-size: 3.7rem;
+  margin-bottom: 0.3rem;
+  color: #b9b7b7;
+}
+main .particular-topic .all-components .first-component h3,
+main .particular-topic .all-components .second-component h3,
+main .particular-topic .all-components .third-component h3 {
+  color: rgb(49, 48, 48);
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+main .particular-topic .all-components .first-component p,
+main .particular-topic .all-components .second-component p,
+main .particular-topic .all-components .third-component p {
+  font-size: 0.9rem;
+  color: rgb(99, 97, 97);
+}
+main .Headquarters h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+main .Headquarters .container {
+  max-width: 74%;
+}
+main .Headquarters img {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+main .Headquarters p {
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+/***********Footer Styling***********/
+.Footer {
+  margin: 150px 0 0 0;
+  width: 100%;
+  height: auto;
+  padding: 70px 0 0 0;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.Footer p {
+  color: #313030;
+}
+.Footer .footer_first_comp h1 span {
+  color: #B90F0F;
+}
+.Footer .footer_first_comp .icons {
+  margin-left: -13.2rem;
+}
+.Footer .footer_first_comp .icons i {
+  color: #B90F0F;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.Footer .footer_first_comp .icons .container {
+  max-width: 250px;
+}
+.Footer .footer_second_comp h3 {
+  color: #af0d0d;
+}
+.Footer .footer_second_comp li a {
+  color: #313030;
+}
+.Footer .footer_third_comp {
+  margin-top: -2rem;
+  margin-bottom: -1.5rem;
+}
+.Footer .footer_third_comp iframe {
+  width: 100%;
+  height: 300px;
+}
+.Footer .footer_fourth_comp {
+  background: #dddbdb;
+  height: 60px;
+  padding-top: 1.5rem;
+  font-size: 1rem;
+}
+.Footer .footer_fourth_comp p {
+  color: #8d0f0f;
+}
+
+/***********Media Queries***********/
+@media (max-width: 1400px) {
+  .Footer .footer_first_comp .icons {
+    margin-left: -9.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  main .Headquarters .container {
+    max-width: 80%;
+  }
+  main .Headquarters p {
+    font-size: 1.2rem;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -6rem;
+  }
+}
+@media (max-width: 990px) {
+  main .Contact-us .container {
+    max-width: 700px;
+  }
+  main .Contact-us .first-part .graphic {
+    width: 50%;
+  }
+  main .Contact-us .first-part form input {
+    width: 380px;
+  }
+  main .Contact-us .second-part {
+    margin: 7rem 0 0 0;
+    width: 268px;
+    padding: 1.3rem 0 0 0;
+  }
+  main .Contact-us .second-part h2 {
+    font-size: 1.9rem;
+  }
+  main .Contact-us .second-part .divider-line {
+    width: 210px;
+    margin-left: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+  main .Contact-us .second-part ul {
+    padding: 0 0 0.8rem 0;
+  }
+  main .Contact-us .second-part ul li {
+    margin-top: 0.1rem;
+  }
+  main .Contact-us .second-part .icons {
+    padding-bottom: 1.2rem;
+    padding-right: 0.6rem;
+  }
+  main .Contact-us .second-part .icons .container {
+    max-width: 300px;
+  }
+  main .Contact-us .second-part .icons i {
+    width: 47px;
+    height: 47px;
+    padding-top: 0.7rem;
+  }
+  main .Headquarters .container {
+    max-width: 90%;
+  }
+  main .Headquarters h1 {
+    font-size: 2.8rem;
+  }
+  main .Headquarters p {
+    font-size: 1.2rem;
+  }
+  main .particular-topic h1 {
+    font-size: 2.5rem;
+  }
+  .Footer {
+    margin: 100px 0 0 0;
+    padding: 60px 0 0 0;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -8.3rem;
+  }
+  .Footer .footer_third_comp {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 800px) {
+  header .navbar .brand-title .logo {
+    margin: 0.5rem 0.5rem 0.5rem 0.8rem;
+  }
+  header .navbar .navbar-links li .signup {
+    margin-right: 0rem;
+  }
+}
+@media (max-width: 768px) {
+  main .Contact-us .container {
+    max-width: 350px;
+  }
+  main .Contact-us .first-part .graphic {
+    width: 170px;
+  }
+  main .Contact-us .first-part h2 {
+    text-align: center;
+  }
+  main .Contact-us .first-part form input {
+    width: 100%;
+  }
+  main .Contact-us .first-part .send-btn {
+    margin: 1rem 0 0 6rem;
+    width: 130px;
+  }
+  main .Contact-us .second-part {
+    margin: 4.8rem 0 0 1.8rem;
+  }
+  main .Headquarters .container {
+    max-width: 74%;
+  }
+  main .Headquarters p {
+    text-align: center;
+  }
+  main .particular-topic .all-components .first-component,
+main .particular-topic .all-components .second-component,
+main .particular-topic .all-components .third-component {
+    margin-left: 0%;
+    margin-bottom: 3%;
+    padding: 10% 12%;
+  }
+}
+@media (max-width: 767px) {
+  .Footer {
+    padding: 50px 0 0 0;
+  }
+  .Footer .container {
+    max-width: 375px;
+  }
+  .Footer .footer_first_comp {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .Footer .footer_first_comp h1 {
+    font-size: 2.2rem;
+  }
+  .Footer .footer_first_comp p {
+    font-size: 0.9rem;
+  }
+  .Footer .footer_first_comp .icons {
+    margin-left: -0.3rem;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  header .navbar .navbar-links li .help:hover,
+header .navbar .navbar-links li .login:hover {
+    color: #B90F0F;
+  }
+  header .navbar .navbar-links li .signup:hover {
+    color: #E5E5E5;
+  }
+  main .Contact-us .first-part .send-btn:hover {
+    box-shadow: 1px 1px 5px 1px #B90F0F;
+  }
+  main .particular-topic .all-components .first-component:hover i,
+main .particular-topic .all-components .second-component:hover i,
+main .particular-topic .all-components .third-component:hover i {
+    color: #B90F0F;
+  }
+  .Footer .footer_first_comp .icons i:hover {
+    color: #8b0707;
+  }
+  .Footer .footer_second_comp li a:hover {
+    color: #B90F0F;
+  }
+}/*# sourceMappingURL=Contact-style.css.map */

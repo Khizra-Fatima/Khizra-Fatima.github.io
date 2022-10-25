@@ -1,0 +1,1165 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Regular", "sans-serif";
+}
+
+body {
+  background: #242323;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  color: #5B5BD9;
+  font-size: calc(3.8em + 1vw);
+  margin-bottom: 0.1em;
+}
+
+p {
+  line-height: normal;
+  font-size: 1em;
+}
+
+img {
+  max-width: 1920px;
+}
+
+/***********Actual Styling***********/
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/Hero_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /***********Navbar Styling***********/
+  /***********Hero Styling***********/
+}
+header nav {
+  background-color: #242323;
+  padding: 2% 0% 2% 2.5%;
+}
+header nav h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+header nav h1 .part1 {
+  color: white;
+}
+header nav h1 .part2 {
+  color: #5B5BD9;
+  font-weight: 600;
+}
+header nav .sec-nav .nav-item a,
+header nav .sec-nav .nav-item1 a {
+  color: #7676ff !important;
+  margin-left: 0.5em;
+  font-size: 1.1em;
+}
+header .Hero-section {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+header .Hero-section h3 {
+  font-size: calc(5.5em + 1vw);
+  color: white;
+  opacity: 50%;
+}
+header .Hero-section h1 {
+  font-size: calc(9.5em + 1vw);
+  margin: -0.23em 0 0.12em 0;
+  font-family: "Roboto Medium";
+}
+header .Hero-section h1 span {
+  color: #5B5BD9;
+  opacity: 50%;
+}
+header .Hero-section .primary_para {
+  margin-bottom: 2em;
+}
+header .Hero-section .primary_para p {
+  opacity: 90%;
+  line-height: 1.2em;
+  font-size: calc(0.65em + 1vw);
+  margin: -0.1em;
+}
+header .Hero-section .hero_button a {
+  font-size: 1em;
+  margin: 0 5px;
+  color: white;
+  background-color: rgba(96, 80, 220, 0.6);
+  border: 1px solid white;
+  padding: 0.65em 1.5em 0.65em 1.5em;
+  line-height: 1.4;
+}
+
+/***********Body Styling***********/
+
+main .Services {
+  margin: 150px 0;
+}
+main .Services .Services-text {
+  margin: 0 10%;
+}
+main .Services .Services_components h3 {
+  margin: 100px 0 4px 0;
+  color: #5B5BD9;
+  font-size: 2em;
+}
+main .Services .Services_components p {
+  font-size: 0.95em;
+}
+main .Services .Services_components .divider {
+  height: 1px;
+  width: 72%;
+  background-color: white;
+  margin: 0 0 1.7em 0.2em;
+}
+main .Services .Services_components ul {
+  padding: 0 !important;
+  margin-top: 2em;
+}
+main .Services .Services_components ul li {
+  font-size: 1em;
+  margin: 0.5em 0 0 1.2em;
+}
+main .Services .Services_components ul li:before {
+  content: "";
+  background-color: #5B5BD9;
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0.4em 0 0 -1.2em;
+}
+main .Our_work .Our_work_text {
+  margin: 0 10%;
+}
+main .Our_work .Our_work_imgs {
+  text-align: center;
+  margin-top: 5.3em;
+}
+main .Our_work .Our_work_imgs img {
+  width: 100%;
+  height: 185px;
+  border: 2px solid rgba(255, 255, 255, 0.849);
+  cursor: pointer;
+}
+main .Our_work .Our_work_imgs p {
+  margin-top: 8%;
+  color: rgb(112, 94, 241);
+  font-size: 1.2em;
+}
+main .Our_work .Our_work_imgs .button {
+  margin: 3% 0 18% 0;
+}
+main .Our_work .Our_work_imgs .button a {
+  color: white;
+  background-color: rgba(96, 80, 220, 0.6);
+  padding: 0.6em 1.7em 0.6em 1.7em;
+  line-height: 1.4;
+}
+main .Our_process {
+  margin: 150px 0;
+  position: relative;
+}
+main .Our_process .Our_process_text {
+  margin: 0 10%;
+}
+main .Our_process .Our_process_steps .container {
+  max-width: 960px;
+}
+main .Our_process .Our_process_steps .procedure-line {
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  border-top: 2px dashed white;
+  width: 1100px;
+  z-index: -1 !important;
+}
+main .Our_process .Our_process_steps .box {
+  margin: 5em auto 0.7em auto;
+  text-align: center;
+  background-color: rgb(44, 44, 44);
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 90%;
+  height: auto;
+  padding: 22%;
+}
+main .Our_process .Our_process_steps .box img {
+  width: 100%;
+  height: auto;
+}
+main .Our_process .Our_process_steps p {
+  color: #5B5BD9;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+main .Team {
+  margin: 150px 0 180px 0;
+}
+main .Team .Team_text {
+  margin: 0 10%;
+}
+main .Team .Team_members {
+  margin-top: 7em;
+  text-align: center;
+}
+main .Team .Team_members img {
+  width: 100%;
+  height: auto;
+}
+main .Team .Team_members .text-sec {
+  background: #3b3b96;
+  opacity: 75%;
+  width: 100%;
+  padding: 3% 5% 4% 5%;
+}
+main .Team .Team_members .text-sec .name {
+  color: white;
+  font-size: calc(0.3em + 1vw);
+  font-weight: 300;
+}
+main .Team .Team_members .text-sec .role {
+  font-size: calc(0.25em + 1vw);
+  margin: -4% 0 0 0;
+  color: #a9a9f5;
+}
+main .Statistics .desktop-pic {
+  position: relative;
+  max-width: 100%;
+  height: 276px;
+  z-index: -1 !important;
+}
+main .Statistics .tab-pic {
+  display: none;
+}
+main .Statistics .mobile-pic {
+  display: none;
+}
+main .Statistics .components {
+  position: relative;
+}
+main .Statistics .components .statistics_text {
+  margin-top: -10em;
+}
+main .Statistics .components .statistics_text .stats-divider {
+  position: absolute;
+  top: -62.5%;
+  margin-left: -0.7em;
+  width: 1px;
+  height: 180px;
+  border: 1px solid white;
+  opacity: 60%;
+}
+main .Statistics .components .statistics_text .para1 {
+  font-size: 2.3em;
+}
+main .Statistics .components .statistics_text .para2 {
+  font-size: 1.7em;
+  color: #5B5BD9;
+}
+main .Packages {
+  margin: 150px 0 0 0;
+}
+main .Packages .Packages_text {
+  margin: 0 10%;
+}
+main .Packages .Packages_components {
+  margin-top: 8rem;
+  text-align: center;
+}
+main .Packages .Packages_components .container {
+  max-width: 66%;
+}
+main .Packages .Packages_components img {
+  margin-bottom: 1.6em;
+  width: 100%;
+  height: auto;
+}
+main .Packages .Packages_components .Package2 {
+  margin-top: -7%;
+}
+main .Packages .Packages_components a {
+  color: white;
+  background-color: rgba(96, 80, 220, 0.6);
+  padding: 0.8em 3em 0.8em 3em;
+  line-height: 1.4;
+}
+main .About_us {
+  margin: 150px 0;
+}
+main .About_us .About_us_text {
+  margin: 0 10%;
+}
+main .About_us .about-us-components {
+  margin-top: 100px;
+}
+main .About_us .about-us-components .container {
+  max-width: 70%;
+}
+main .About_us .about-us-components .img-div .img1 {
+  width: 95%;
+  height: auto;
+}
+main .About_us .about-us-components p {
+  margin-top: 10%;
+  font-size: 0.95em;
+  text-align: left;
+}
+main .About_us .about-us-components .button-au {
+  margin-top: 2em;
+}
+main .About_us .about-us-components .button-au a {
+  color: white;
+  background-color: rgba(96, 80, 220, 0.6);
+  border: 1px solid white;
+  padding: 0.7em 1.5em;
+}
+main .Call_to_action {
+  width: 100%;
+  height: 240px;
+  background-image: url(Images/CTA-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+main .Call_to_action .Cta_text {
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+main .Faqs {
+  margin: 150px 0;
+}
+main .Faqs .Faqs_text {
+  margin: 0 10% 3em 10%;
+}
+main .Faqs .container {
+  margin: 0 auto;
+  width: 60%;
+}
+main .Faqs .accordion {
+  margin-top: 8%;
+}
+main .Faqs .accordion .accordion-item {
+  margin-top: 1em;
+  background-color: rgba(43, 43, 44, 0.42);
+  border: 1px solid #686666;
+}
+main .Faqs .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #5B5BD9;
+}
+main .Faqs .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+  color: rgba(91, 91, 217, 0.85);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background-color: rgba(43, 43, 44, 0.42);
+  outline: none;
+}
+main .Faqs .accordion .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+main .Faqs .accordion .icon {
+  margin-right: 1em;
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+main .Faqs .accordion .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+main .Faqs .accordion .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+main .Faqs button[aria-expanded=true] {
+  color: #5B5BD9;
+}
+main .Faqs button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+main .Faqs button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 25em;
+  transition: all 0.5s linear;
+  will-change: opacity, max-height;
+}
+main .Faqs .accordion-content {
+  background-color: rgba(91, 91, 217, 0.5);
+  padding: 0em 2em 0em 2em;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 300ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+main .Faqs .accordion-content p {
+  color: rgba(225, 225, 225, 0.9);
+  font-size: 1rem;
+  margin: 1em 0;
+}
+main .Contact_us .Contact_us_lets_talk {
+  background-color: rgb(63, 63, 127);
+  border: 1px solid #8F8989;
+  width: 70%;
+  margin: auto;
+  padding: 1% 5.5% 3.4% 0;
+}
+main .Contact_us .Contact_us_lets_talk .parent-div {
+  position: relative;
+}
+main .Contact_us .Contact_us_lets_talk h1 {
+  color: white;
+  font-size: calc(1.7em + 1vw);
+  margin-bottom: 3.2%;
+}
+main .Contact_us .Contact_us_lets_talk h2 {
+  display: none;
+}
+main .Contact_us .Contact_us_lets_talk .pri-img {
+  width: 100%;
+  height: auto;
+  margin-top: 11.1%;
+}
+main .Contact_us .Contact_us_lets_talk form input {
+  width: 100%;
+  height: 55px;
+  border-radius: 0.5em;
+  border: 1px solid #686666;
+  background: #353434;
+  margin: 3.5% 0 0 3%;
+  padding-left: 3.7%;
+  color: white;
+}
+main .Contact_us .Contact_us_lets_talk form input:focus {
+  outline: 0;
+  color: white;
+  box-shadow: 0 1px 0 0 #fff;
+}
+main .Contact_us .Contact_us_lets_talk form .message {
+  padding: 4.5% 0 29% 3.7%;
+}
+main .Contact_us .Contact_us_lets_talk .send-btn {
+  transition: 0.2s all ease-in-out;
+  margin: 2.9% 0 0 3.3%;
+}
+main .Contact_us .Contact_us_lets_talk a {
+  font-size: 2.2vmin;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(96, 80, 220, 0.6);
+  border: 1px solid white;
+  padding: 1% 7%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us {
+  position: absolute;
+  top: 8%;
+  left: -24.4%;
+  background-color: #2B2B2C;
+  border: 1px solid #8F8989;
+  width: 38.4%;
+  height: auto;
+  padding: 1.8% 0 0 0;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us h1 {
+  text-align: left;
+  color: #5B5BD9;
+  font-size: calc(0.9em + 1vw);
+  margin-left: 6.3%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us .divider {
+  height: 1.5px;
+  width: 78%;
+  background-color: #5B5BD9;
+  margin: -1.5% 0 0 7.4%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul {
+  margin-top: 10%;
+  margin-bottom: 0;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li {
+  list-style: none;
+  margin-top: 1.5%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li img {
+  width: 9.2%;
+  height: auto;
+  margin-top: 11.1%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li .number {
+  transform: rotate(10deg);
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li .address {
+  width: 8.5%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li p {
+  font-size: 0.95em;
+  margin: -7.2% 0 0 15%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li .address-para {
+  margin: -9.4% 0 0 15%;
+}
+main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us .img-primary {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/***********Footer Styling***********/
+.Footer {
+  margin: 150px 0 0 0;
+  width: 100%;
+  height: auto;
+  background-color: #302f2f;
+}
+.Footer .footer-components .footer_first_comp h1 {
+  margin-top: 1.1em;
+}
+.Footer .footer-components .footer_first_comp h1 span {
+  color: #5B5BD9;
+}
+.Footer .footer-components .footer_first_comp p {
+  font-size: 0.9em;
+  margin: 0.5em 0 2.4em 0;
+}
+.Footer .footer-components .footer_first_comp .icons .container {
+  padding: 0 !important;
+}
+.Footer .footer-components .footer_first_comp .icons i {
+  color: #5B5BD9;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 0;
+}
+.Footer .footer-components .footer_second_comp,
+.Footer .footer-components .footer_third_comp,
+.Footer .footer-components .footer_fourth_comp {
+  margin: 3.7em 0 2.6em 0;
+}
+.Footer .footer-components .footer_second_comp ul,
+.Footer .footer-components .footer_third_comp ul,
+.Footer .footer-components .footer_fourth_comp ul {
+  margin-top: 1.5em;
+}
+.Footer .footer-components .footer_second_comp ul .heading,
+.Footer .footer-components .footer_third_comp ul .heading,
+.Footer .footer-components .footer_fourth_comp ul .heading {
+  font-size: 1.3em;
+  color: white;
+  margin: 0 0 0.5em 0 !important;
+}
+.Footer .footer-components .footer_second_comp ul .f-text,
+.Footer .footer-components .footer_third_comp ul .f-text,
+.Footer .footer-components .footer_fourth_comp ul .f-text {
+  cursor: pointer;
+  font-size: 0.95em;
+  color: #5B5BD9;
+}
+.Footer .footer_fifth_comp {
+  background-color: #353434;
+  padding: 1.5em 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.Footer .footer_fifth_comp p {
+  width: 260px !important;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5B5BD9;
+}
+
+#myBTN {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  color: white;
+  background: #5B5BD9;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1400px) {
+  main .Packages .Packages_components .container {
+    max-width: 80%;
+  }
+  main .About_us .about-us-components .container {
+    max-width: 85%;
+  }
+  main .About_us .about-us-components p {
+    margin-top: 9%;
+    font-size: 0.9em;
+  }
+  main .About_us .about-us-components .button-au {
+    margin-top: 5%;
+  }
+  main .About_us .about-us-components .button-au a {
+    font-size: 0.96em;
+  }
+  main .Contact_us .container {
+    max-width: 90%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li p {
+    font-size: calc(0.47em + 0.5vw);
+  }
+}
+@media (max-width: 1200px) {
+  main .Our_process .Our_process_steps .container {
+    max-width: 750px;
+  }
+  main .Our_process .Our_process_steps .procedure-line {
+    position: absolute;
+    top: 77%;
+    width: 840px;
+  }
+  main .Our_process .Our_process_steps .box {
+    margin: 4.5em auto 0.7em auto;
+    width: 100%;
+  }
+  main .Contact_us .container {
+    max-width: 93%;
+  }
+  main .Contact_us .Contact_us_lets_talk form input {
+    font-size: 0.95em;
+    height: 50px;
+  }
+  main .Contact_us .Contact_us_lets_talk form .message {
+    padding: 5% 0 29% 3.7%;
+  }
+  main .Contact_us .Contact_us_lets_talk a {
+    font-size: 2.1vmin;
+    padding: 1.2% 7%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul {
+    padding-left: 10%;
+    margin-top: 6%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li img {
+    width: 9.6%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li p {
+    font-size: calc(0.52em + 0.4vw);
+    color: #f7fdfd;
+  }
+  .Footer .footer-components .container {
+    max-width: 95%;
+  }
+}
+@media (max-width: 991px) {
+  header nav {
+    z-index: 1 !important;
+  }
+  header nav .sec-nav .nav-item1 {
+    margin-top: 2rem;
+  }
+  header .Hero-section h3 {
+    font-size: 10vw;
+  }
+  header .Hero-section h1 {
+    font-size: 17vw;
+    margin: -0.23em 0 0 0;
+  }
+  header .Hero-section .primary_para p {
+    font-size: 2.3vw;
+  }
+  main .Our_work .Our_work_imgs .container {
+    max-width: 690px;
+  }
+  main .Our_process .Our_process_steps .container {
+    max-width: 630px;
+  }
+  main .Our_process .Our_process_steps .procedure-line {
+    position: absolute;
+    top: 78%;
+    width: 690px;
+  }
+  main .Our_process .Our_process_steps .box {
+    width: 105%;
+  }
+  main .Team .Team_members {
+    margin-top: 5em;
+  }
+  main .Team .Team_members .Member {
+    margin: 2em 0 0 0;
+  }
+  main .Team .Team_members .Member .text-sec .name {
+    font-size: calc(0.6em + 1vw);
+  }
+  main .Team .Team_members .Member .text-sec .role {
+    font-size: calc(0.5em + 1vw);
+  }
+  main .Statistics .desktop-pic {
+    height: 240px;
+  }
+  main .Statistics .components .statistics_text {
+    margin-top: -8.7em;
+  }
+  main .Statistics .components .statistics_text .stats-divider {
+    position: absolute;
+    top: -60%;
+    margin-left: -0.8em;
+    height: 156px;
+  }
+  main .Statistics .components .statistics_text .para1 {
+    font-size: 2em;
+  }
+  main .Statistics .components .statistics_text .para2 {
+    font-size: 1.4em;
+  }
+  main .Packages .Packages_components .container {
+    max-width: 90%;
+  }
+  main .About_us .about-us-components {
+    text-align: center;
+  }
+  main .About_us .about-us-components .container {
+    max-width: 70%;
+  }
+  main .About_us .about-us-components .img-div .img1 {
+    width: 65%;
+  }
+  main .About_us .about-us-components p {
+    text-align: center;
+  }
+  main .About_us .about-us-components .button-au {
+    margin-top: 2.5em;
+  }
+  main .Contact_us .Contact_us_lets_talk .pri-img {
+    width: 110%;
+    margin: 18% 0 0 5%;
+  }
+  main .Contact_us .Contact_us_lets_talk form input {
+    height: 50px;
+    font-size: 0.9em;
+    border-radius: 0.7em;
+  }
+  main .Contact_us .Contact_us_lets_talk a {
+    font-size: 2vmin;
+    padding: 1% 7%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us {
+    position: absolute;
+    top: 3%;
+    left: -18.4%;
+    background-color: #2B2B2C;
+    border: 1px solid #8F8989;
+    width: 42%;
+    height: auto;
+    padding: 1.8% 0 0 0;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us .divider {
+    text-align: center;
+    width: 86%;
+    margin: -1.5% 7% 0 7%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li {
+    margin-top: 1.5%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li img {
+    width: 10%;
+    margin-top: 6%;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li p {
+    font-size: 0.8em;
+    margin: 0.6em 0 0 0;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li .address-para {
+    margin: 0.6em 0 0 0;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us .img-primary {
+    margin: -11% 0 0 0;
+  }
+  .Footer .footer-components .container {
+    max-width: 75%;
+  }
+  .Footer .footer-components .footer_first_comp {
+    margin-top: 1em;
+  }
+  .Footer .footer-components .footer_first_comp .icons {
+    margin-left: -14%;
+  }
+  .Footer .footer-components .footer_first_comp .icons .container {
+    padding: 0 !important;
+  }
+  .Footer .footer-components .footer_first_comp .icons i {
+    font-size: 2em;
+    padding: 0;
+  }
+  .Footer .footer-components .footer_second_comp,
+.Footer .footer-components .footer_third_comp,
+.Footer .footer-components .footer_fourth_comp {
+    margin: 2.7em 0 2.6em 0;
+  }
+  .Footer .footer-components .footer_third_comp {
+    margin-left: -50%;
+  }
+}
+@media (max-width: 767px) {
+  header .Hero-section h3 {
+    font-size: 12vw;
+  }
+  header .Hero-section h1 {
+    font-size: 20vw;
+  }
+  header .Hero-section .primary_para p {
+    font-size: calc(0.75em + 1vw);
+  }
+  header .Hero-section .hero_button a {
+    font-size: 0.95em;
+  }
+  main .content-para {
+    font-size: 0.97em !important;
+  }
+  main .Services {
+    text-align: center;
+  }
+  main .Services .Services_components .container {
+    max-width: 350px;
+  }
+  main .Services .Services_components .divider {
+    width: 100% !important;
+  }
+  main .Our_work .Our_work_imgs .container {
+    max-width: 330px;
+  }
+  main .Our_process .Our_process_steps {
+    margin-top: 3em;
+  }
+  main .Our_process .Our_process_steps .container {
+    max-width: 320px;
+    position: relative;
+  }
+  main .Our_process .Our_process_steps .procedure-line {
+    position: absolute;
+    top: 53.6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1015px;
+    border: 1px dashed white;
+  }
+  main .Our_process .Our_process_steps .box {
+    margin: 4em auto 0.7em auto;
+    width: 60%;
+    padding: 15% 15% 17% 15%;
+  }
+  main .Our_process .Our_process_steps p {
+    margin: -2.5em 0 0 0;
+  }
+  main .Team .Team_members .container {
+    max-width: 340px;
+  }
+  main .Team .Team_members .Member .text-sec .name {
+    font-size: 1.1em;
+  }
+  main .Team .Team_members .Member .text-sec .role {
+    font-size: 1em;
+  }
+  main .Statistics .desktop-pic {
+    display: none;
+  }
+  main .Statistics .tab-pic {
+    width: 100%;
+    display: block;
+    height: 504px;
+    z-index: -1 !important;
+  }
+  main .Statistics .components .statistics_text {
+    margin-top: -24.25em;
+  }
+  main .Statistics .components .statistics_text .third_stats,
+main .Statistics .components .statistics_text .fourth_stats {
+    margin-top: 7.45em;
+  }
+  main .Statistics .components .statistics_text .stats-divider {
+    display: none;
+  }
+  main .Statistics .components .statistics_text .para1 {
+    font-size: 2.3em;
+  }
+  main .Statistics .components .statistics_text .para2 {
+    font-size: 1.7em;
+  }
+  main .Packages {
+    margin-top: 180px;
+  }
+  main .Packages .Packages_components .container {
+    max-width: 330px;
+  }
+  main .Packages .Packages_components .Package3 {
+    margin-top: 4em;
+  }
+  main .Packages .Packages_components .Package2 {
+    margin-top: 4em;
+  }
+  main .About_us .about-us-components .container {
+    max-width: 80%;
+  }
+  main .About_us .about-us-components .img-div .img1 {
+    width: 85%;
+  }
+  main .Contact_us {
+    margin-top: 17em;
+  }
+  main .Contact_us .Contact_us_lets_talk {
+    width: 340px;
+    padding: 1.5em 1.3em 3em 1.3em;
+  }
+  main .Contact_us .Contact_us_lets_talk .main-heading {
+    display: none;
+  }
+  main .Contact_us .Contact_us_lets_talk h2 {
+    display: block;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    left: 21%;
+    top: 44%;
+  }
+  main .Contact_us .Contact_us_lets_talk .pri-img {
+    display: flex;
+    width: 80%;
+    transform: rotate(100deg);
+    margin: 8em auto 0 auto;
+    position: relative;
+    top: 4.3%;
+  }
+  main .Contact_us .Contact_us_lets_talk form input {
+    height: 50px;
+    margin: 1em 0 0 0;
+    padding-left: 0.9em;
+  }
+  main .Contact_us .Contact_us_lets_talk form input:focus {
+    box-shadow: none;
+  }
+  main .Contact_us .Contact_us_lets_talk form .message {
+    padding: 1.3em 0 9em 0.9em;
+  }
+  main .Contact_us .Contact_us_lets_talk .send-btn {
+    margin: 1.2em 0 0 0;
+    text-align: center;
+  }
+  main .Contact_us .Contact_us_lets_talk a {
+    font-size: 1.1em;
+    padding: 0.4em 2em;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us {
+    position: absolute;
+    top: -20%;
+    left: 0.5em;
+    width: 280px;
+    padding: 0.7em 0 0 0;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us h1 {
+    font-size: 2em;
+    margin-left: 0;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul {
+    text-align: left;
+    margin-top: 3.5em 0 0 0;
+    padding-left: 1.5em;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li {
+    margin-top: 0.4em;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li img {
+    width: 27px;
+    margin-top: 1.6em;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li .address {
+    width: 23px;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li p {
+    font-size: 0.95em;
+    margin: -1.33em 0 0 2.6em;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us ul li .address-para {
+    margin: -1.43em 0 0 2.6em;
+  }
+  main .Contact_us .Contact_us_lets_talk .Contact_us_contact_us .img-primary {
+    margin: 0;
+  }
+  .Footer .footer-components {
+    text-align: center;
+  }
+  .Footer .footer-components .container {
+    max-width: 340px;
+  }
+  .Footer .footer-components .footer_first_comp {
+    margin-top: 3em;
+  }
+  .Footer .footer-components .footer_first_comp .icons {
+    margin-left: 0;
+  }
+  .Footer .footer-components .footer_second_comp,
+.Footer .footer-components .footer_third_comp,
+.Footer .footer-components .footer_fourth_comp {
+    margin: 2.5em 0 0 0;
+  }
+  .Footer .footer-components .footer_second_comp ul,
+.Footer .footer-components .footer_third_comp ul,
+.Footer .footer-components .footer_fourth_comp ul {
+    padding: 0 !important;
+  }
+  .Footer .footer-components .footer_third_comp {
+    margin-left: 0;
+  }
+  .Footer .footer-components .footer_fourth_comp {
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 575px) {
+  main .Statistics .desktop-pic {
+    display: none;
+  }
+  main .Statistics .tab-pic {
+    display: none;
+  }
+  main .Statistics .mobile-pic {
+    display: block;
+    width: 100%;
+    height: 960px;
+    z-index: -1 !important;
+  }
+  main .Statistics .components .statistics_text {
+    margin-top: -52.7em;
+  }
+  main .Statistics .components .statistics_text .second_stats {
+    margin-top: 7.45em;
+  }
+}
+@media (max-width: 375px) {
+  header .Hero-section h3 {
+    font-size: 3.5em !important;
+  }
+  header .Hero-section .primary_para p {
+    font-size: 1.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  main .Faqs .container {
+    width: 70%;
+  }
+  main .Faqs .accordion button {
+    font-size: 1rem;
+  }
+  main .Faqs .accordion-content p {
+    font-size: 0.95rem;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  header nav .sec-nav .nav-item a:hover,
+header nav .sec-nav .nav-item1 a:hover {
+    color: white !important;
+    opacity: 95%;
+  }
+  header .Hero-section .hero_button a:hover {
+    background-color: rgba(96, 80, 220, 0.8);
+  }
+  main .Our_work .Our_work_imgs .button a:hover {
+    background-color: rgba(96, 80, 220, 0.8);
+  }
+  main .Packages .Packages_components a:hover {
+    background-color: rgba(60, 60, 63, 0.2);
+    color: #5B5BD9;
+    border: 1px solid #5B5BD9;
+  }
+  main .About_us .about-us-components .button-au a:hover {
+    background-color: rgba(96, 80, 220, 0.8);
+  }
+  main .Faqs .accordion button:hover {
+    cursor: pointer;
+    color: rgb(91, 91, 217);
+  }
+  main .Faqs .accordion button:hover::after {
+    cursor: pointer;
+    color: #5B5BD9;
+    border: 1px solid #5B5BD9;
+  }
+  main .Contact_us .Contact_us_lets_talk a:hover {
+    background-color: rgba(96, 80, 220, 0.8);
+    box-shadow: 1px 1px 5px 1px rgb(225, 225, 225);
+  }
+  .Footer .footer-components .footer_first_comp .icons i:hover {
+    color: #4444b4;
+  }
+  .Footer .footer-components .footer_second_comp ul .f-text:hover,
+.Footer .footer-components .footer_third_comp ul .f-text:hover,
+.Footer .footer-components .footer_fourth_comp ul .f-text:hover {
+    color: #454592;
+  }
+  .Footer #myBTN:hover {
+    background: #1b1616;
+    color: #5B5BD9;
+  }
+}/*# sourceMappingURL=Portfolio-style.css.map */

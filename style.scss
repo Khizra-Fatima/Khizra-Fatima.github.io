@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'sans-serif';
+}
+
+body {
+    background: #242323;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: normal;
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    h1 {
+        margin: 0.5em 0 0 0;
+        font-size: 4em;
+        color: rgb(62, 196, 151);
+    }
+
+    .divider {
+        border: 1px solid white;
+        width: 100%;
+    }
+
+    ul {
+        margin: 4em 0 0 0;
+
+        li {
+            margin: 1em 0 0 0;
+        }
+
+        a {
+            color: rgb(62, 196, 151);
+        }
+    }
+}

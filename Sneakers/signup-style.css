@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  line-height: normal;
+  font-size: 1em;
+}
+
+main {
+  height: 100vh;
+}
+main .login-form {
+  padding: 0 !important;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .login-form .container {
+  width: 450px;
+}
+main .login-form .login-pri {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 1px 1px 8px rgb(158, 154, 154);
+  padding: 2.7em 2.3em 2.2em 2.3em;
+  width: 450px;
+}
+main .login-form .login-pri h3 {
+  color: rgb(124, 121, 121);
+  font-weight: 400;
+  font-size: 1.4em;
+}
+main .login-form .login-pri h1 {
+  font-size: 3.3em;
+  margin-top: -0.08em;
+}
+main .login-form .login-pri h1 span {
+  color: #B90F0F;
+}
+main .login-form .login-pri h2 {
+  margin: 0.5em 0;
+}
+main .login-form .login-pri form {
+  text-align: right;
+  padding: 0 0.7em;
+}
+main .login-form .login-pri form input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 25px;
+  margin: 1em 0 0 0;
+  padding-left: 55px;
+  color: rgb(85, 83, 83);
+  z-index: -1;
+}
+main .login-form .login-pri form input:focus {
+  outline: 0;
+  color: rgb(85, 83, 83);
+}
+main .login-form .login-pri .user,
+main .login-form .login-pri .lock,
+main .login-form .login-pri .email,
+main .login-form .login-pri .lock-sec {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  font-size: 18px;
+  margin-bottom: -5.8em;
+  margin-top: 0.6em;
+  text-align: center;
+  float: left;
+  color: #B90F0F;
+  padding-top: 0.8em;
+  opacity: 0.85;
+}
+main .login-form .login-pri .lock-sec {
+  color: #b1aeae;
+}
+main .login-form .login-pri .show-hide {
+  position: absolute;
+  margin: -2em 0 0 -2.2em;
+}
+main .login-form .login-pri .show-hide i {
+  font-size: 19px;
+  color: #B90F0F;
+  opacity: 80%;
+  cursor: pointer;
+  display: none;
+}
+main .login-form .login-pri .show-hide i.hide::before {
+  content: "\f070";
+}
+main .login-form .login-pri #password-id:valid ~ .show-hide i {
+  display: block;
+}
+main .login-form .login-pri .login-btn-pri {
+  padding: 0 1em;
+  margin-bottom: 1.7em;
+}
+main .login-form .login-pri .login-btn-pri .login-btn {
+  transition: 0.2s all ease-in-out;
+  margin-top: 1.3em;
+  margin-bottom: 1.6em;
+  padding: 0.58em 1.8em;
+  width: 100%;
+  background-color: #B90F0F;
+  font-size: 1.1em;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+}
+main .login-form .login-pri .login-btn-pri .login-btn a {
+  color: white;
+}
+main .login-form .login-pri .or {
+  font-size: 1.2em;
+  margin-bottom: 1.3em;
+}
+main .login-form .login-pri .social-media-icons .container {
+  width: 84%;
+}
+main .login-form .login-pri .social-media-icons .google,
+main .login-form .login-pri .social-media-icons .facebook,
+main .login-form .login-pri .social-media-icons .linkedin,
+main .login-form .login-pri .social-media-icons .twitter {
+  box-shadow: 1px 1px 8px rgb(170, 167, 167);
+  border-radius: 80%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+main .login-form .login-pri .social-media-icons .google i,
+main .login-form .login-pri .social-media-icons .facebook i,
+main .login-form .login-pri .social-media-icons .linkedin i,
+main .login-form .login-pri .social-media-icons .twitter i {
+  font-size: 1.47em;
+  padding-top: 0.63em;
+}
+main .login-form .login-pri .social-media-icons .google .g-icon,
+main .login-form .login-pri .social-media-icons .facebook .g-icon,
+main .login-form .login-pri .social-media-icons .linkedin .g-icon,
+main .login-form .login-pri .social-media-icons .twitter .g-icon {
+  color: red;
+}
+main .login-form .login-pri .social-media-icons .google .f-icon,
+main .login-form .login-pri .social-media-icons .facebook .f-icon,
+main .login-form .login-pri .social-media-icons .linkedin .f-icon,
+main .login-form .login-pri .social-media-icons .twitter .f-icon {
+  color: #3B5998;
+}
+main .login-form .login-pri .social-media-icons .google .t-icon,
+main .login-form .login-pri .social-media-icons .facebook .t-icon,
+main .login-form .login-pri .social-media-icons .linkedin .t-icon,
+main .login-form .login-pri .social-media-icons .twitter .t-icon {
+  color: #55ACEE;
+}
+main .login-form .login-pri .social-media-icons .google .l-icon,
+main .login-form .login-pri .social-media-icons .facebook .l-icon,
+main .login-form .login-pri .social-media-icons .linkedin .l-icon,
+main .login-form .login-pri .social-media-icons .twitter .l-icon {
+  color: #2c78b3;
+}
+
+/***************** Media Queries *****************/
+@media (max-width: 425px) {
+  main .login-form .container {
+    width: 340px;
+  }
+  main .login-form .login-pri {
+    padding: 2em 1em;
+    width: 340px;
+  }
+  main .login-form .login-pri .or {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  main .login-form .login-pri .login-btn-pri .login-btn:hover {
+    box-shadow: 1px 1px 5px 1px #be4141;
+  }
+}/*# sourceMappingURL=signup-style.css.map */

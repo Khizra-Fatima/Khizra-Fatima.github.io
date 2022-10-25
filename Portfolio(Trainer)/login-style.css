@@ -1,0 +1,400 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Regular", "sans-serif";
+  color: white;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: normal;
+  font-size: 1em;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .login-form .container {
+  max-width: 70%;
+}
+main .login-form .login-div {
+  width: 25%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(rgba(28, 176, 230, 0.85), rgba(28, 176, 230, 0.45));
+  /*padding: 10% 6.3% 8% 6.3%;*/
+  padding: 2% 2% 3% 2%;
+}
+main .login-form .login-div h3 {
+  font-size: calc(1em + 1vw);
+  color: black;
+  margin: 0 0 1.4em 0;
+}
+main .login-form .login-div form {
+  text-align: right;
+}
+main .login-form .login-div form input {
+  width: 100%;
+  height: 55px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 1.2em 0 0 0;
+  padding-left: 68px;
+  color: rgb(202, 202, 202);
+  z-index: -1;
+}
+main .login-form .login-div form input:focus {
+  outline: 0;
+  color: rgb(209, 205, 205);
+}
+main .login-form .login-div .user,
+main .login-form .login-div .lock {
+  background-color: rgba(0, 0, 0, 0.95);
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  font-size: 18px;
+  margin-top: 1.07em;
+  text-align: center;
+  color: rgba(28, 176, 230, 0.75);
+  padding-top: 0.8em;
+}
+main .login-form .login-div .show-hide {
+  position: absolute;
+  margin: 2.3em 0 0 -2.2em;
+}
+main .login-form .login-div .show-hide i {
+  font-size: 19px;
+  color: #1CB0E6;
+  opacity: 80%;
+  cursor: pointer;
+  display: none;
+}
+main .login-form .login-div .show-hide i.hide::before {
+  content: "\f070";
+}
+main .login-form .login-div #password-id:valid ~ .show-hide i {
+  display: block;
+}
+main .login-form .login-div .login-btn {
+  text-align: center;
+  transition: 0.25s all ease-in-out;
+  margin: 1.8em 0 0 5%;
+  padding: 0.5em 0;
+  width: 90%;
+  background-color: #1CB0E6;
+  font-size: 1.2em;
+  border: 0;
+  cursor: pointer;
+}
+main .login-form .login-div .login-btn a {
+  color: black;
+}
+main .login-form .login-div p {
+  font-size: calc(0.7em + 0.3vw);
+  margin: 1em 0 2.5em 0;
+  color: rgb(17, 17, 17);
+}
+main .login-form .login-div p a {
+  color: rgb(209, 202, 202);
+  text-decoration: underline !important;
+}
+main .login-form .login-div .divider {
+  height: 1px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+main .login-form .login-div .custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+main .login-form .login-div .btn-5 {
+  font-family: "Roboto Regular", "sans-serif";
+  width: 90%;
+  height: 45px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background-color: #1CB0E6;
+  margin: 1.8em 5% 0 5%;
+  font-size: 1.2em;
+  color: #080707;
+}
+main .login-form .login-div .btn-5:before,
+main .login-form .login-div .btn-5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(72, 155, 185);
+}
+main .login-form .login-div .btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+main .login-form .main-divider {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(202, 199, 199);
+  height: 86%;
+  width: 1px;
+}
+main .login-form .main-divider .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65px;
+  width: 65px;
+  background: rgb(29, 29, 29);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+main .login-form .main-divider .box p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+}
+main .login-form .sec-login-section {
+  width: 25%;
+  margin: -0.6em 0 0 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .login-form .sec-login-section .google,
+main .login-form .sec-login-section .facebook,
+main .login-form .sec-login-section .twitter {
+  background: #55ACEE;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.3em;
+}
+main .login-form .sec-login-section .google i,
+main .login-form .sec-login-section .facebook i,
+main .login-form .sec-login-section .twitter i {
+  color: white;
+  font-size: 2.3em;
+  margin: 0.19em 0 0 1em;
+}
+main .login-form .sec-login-section .google p,
+main .login-form .sec-login-section .facebook p,
+main .login-form .sec-login-section .twitter p {
+  margin: -1.7em 0 0 5.3em;
+  font-size: 1.1em;
+}
+main .login-form .sec-login-section .google {
+  background: white;
+}
+main .login-form .sec-login-section .google i {
+  color: red;
+}
+main .login-form .sec-login-section .google p {
+  color: #565050;
+}
+main .login-form .sec-login-section .facebook {
+  background: #3B5998;
+}
+
+@media (max-width: 1100px) {
+  main .login-form .container {
+    max-width: 84%;
+  }
+  main .login-form .login-div {
+    width: 34%;
+  }
+  main .login-form .login-div form input {
+    font-size: 0.97em;
+    height: 50px;
+  }
+  main .login-form .login-div .user,
+main .login-form .login-div .lock {
+    height: 50px;
+  }
+  main .login-form .login-div .show-hide {
+    margin: 2.1em 0 0 -2.2em;
+  }
+  main .login-form .login-div .login-btn {
+    font-size: 1.1em;
+  }
+  main .login-form .login-div p {
+    font-size: 0.92em;
+  }
+  main .login-form .login-div .btn-5 {
+    font-size: 1.1em;
+  }
+  main .login-form .sec-login-section {
+    width: 34%;
+  }
+  main .login-form .sec-login-section .google,
+main .login-form .sec-login-section .facebook,
+main .login-form .sec-login-section .twitter {
+    margin-top: 1.4em;
+  }
+  main .login-form .sec-login-section .google i,
+main .login-form .sec-login-section .facebook i,
+main .login-form .sec-login-section .twitter i {
+    font-size: 2em;
+    margin: 0.32em 0 0 1em;
+  }
+  main .login-form .sec-login-section .google p,
+main .login-form .sec-login-section .facebook p,
+main .login-form .sec-login-section .twitter p {
+    margin: -1.7em 0 0 5.3em;
+    font-size: 1.05em;
+  }
+  main .login-form .sec-login-section .google {
+    background: white;
+  }
+  main .login-form .sec-login-section .google i {
+    color: red;
+  }
+  main .login-form .sec-login-section .google p {
+    color: #565050;
+  }
+  main .login-form .sec-login-section .facebook {
+    background: #3B5998;
+  }
+}
+@media (max-width: 767px) {
+  main .login-form .container {
+    max-width: 340px;
+  }
+  main .login-form .login-div {
+    margin: 0;
+    width: 340px;
+    position: absolute;
+    top: 31.4%;
+    transform: translateY(-50%);
+    padding: 1.3em 1.5em 1.8em 1.5em;
+  }
+  main .login-form .main-divider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 8.5em 0 8em 0;
+    height: 1px;
+    width: 60%;
+  }
+  main .login-form .main-divider .box {
+    height: 60px;
+    width: 60px;
+  }
+  main .login-form .main-divider .box p {
+    font-size: 1.3em;
+  }
+  main .login-form .sec-login-section {
+    width: 340px;
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+  }
+  main .login-form .sec-login-section .google,
+main .login-form .sec-login-section .facebook,
+main .login-form .sec-login-section .twitter {
+    background: #55ACEE;
+    width: 100%;
+    height: 50px;
+  }
+  main .login-form .sec-login-section .google i,
+main .login-form .sec-login-section .facebook i,
+main .login-form .sec-login-section .twitter i {
+    font-size: 2.3em;
+    margin: 0.22em 0 0 1em;
+  }
+  main .login-form .sec-login-section .google p,
+main .login-form .sec-login-section .facebook p,
+main .login-form .sec-login-section .twitter p {
+    margin: -1.7em 0 0 5.3em;
+    font-size: 1.2em;
+  }
+  main .login-form .sec-login-section .google {
+    background: white;
+  }
+  main .login-form .sec-login-section .google i {
+    color: red;
+  }
+  main .login-form .sec-login-section .google p {
+    color: #565050;
+  }
+  main .login-form .sec-login-section .facebook {
+    background: #3B5998;
+  }
+}
+@media (max-width: 425px) {
+  main .login-form .sec-login-section {
+    width: 340px;
+    position: absolute;
+    top: 84.4%;
+    transform: translateY(-50%);
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  main .login-form .login-div .login-btn:hover {
+    background-color: black;
+    box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+  }
+  main .login-form .login-div .login-btn:hover a {
+    color: #1CB0E6;
+  }
+  main .login-form .login-div .btn-5:hover {
+    color: rgb(72, 155, 185);
+    background: black;
+    box-shadow: none;
+  }
+  main .login-form .login-div .btn-5:hover:before,
+main .login-form .login-div .btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+  main .login-form .sec-login-section .google:hover,
+main .login-form .sec-login-section .facebook:hover,
+main .login-form .sec-login-section .twitter:hover {
+    box-shadow: 3px 5px 8px rgb(39, 38, 38);
+  }
+}/*# sourceMappingURL=login-style.css.map */

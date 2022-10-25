@@ -1,0 +1,916 @@
+$primary-color: #B90F0F;
+$secondary-color: #E5E5E5;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+p {
+    line-height: normal;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+/***********Actual Styling***********/
+header {
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(rgba(104, 103, 103, 0.8), rgba(66, 66, 66, 0.8));
+    background: linear-gradient(rgba(99, 98, 98, 0.8), rgba(138, 138, 138, 0.8));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+
+    /***********Navbar-Styling***********/
+    .navbar {
+        padding: 0 !important;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #faf9f9;
+        color: rgb(0, 0, 0);
+
+        .brand-title {
+
+            .logo {
+                margin: .5rem .5rem .5rem 2rem;
+                font-size: 2.9rem;
+                color: black;
+
+                span {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .navbar-links {
+            height: 100%;
+            font-size: 1.3rem;
+
+            ul {
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                padding: 0.7rem;
+
+                .help {
+                    color: rgb(71, 70, 70);
+                }
+
+                .login {
+                    color: $primary-color;
+                    background: #faf9f9;
+                    padding: .3rem 0.9rem .44rem 0.9rem;
+                    border: 2px solid $primary-color;
+                }
+
+                .signup {
+                    color: $secondary-color;
+                    background: $primary-color;
+                    padding: .4rem .8rem .53rem .8rem;
+                }
+            }
+        }
+
+        .toggle-button {
+            position: absolute;
+            top: 1.5rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+
+            .bar {
+                height: 3px;
+                width: 100%;
+                background-color: rgb(0, 0, 0);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        .navbar {
+            z-index: 1;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .toggle-button {
+                display: flex;
+            }
+
+            .navbar-links {
+                display: none;
+                width: 100%;
+
+                ul {
+                    width: 100%;
+                    flex-direction: column;
+                }
+
+                li {
+                    text-align: center;
+
+                    a {
+                        padding: .5rem 1rem;
+                    }
+                }
+            }
+
+            .navbar-links.active {
+                display: flex;
+            }
+        }
+    }
+
+    /***********Hero-Section-Styling***********/
+    .Hero-section {
+        width: 100%;
+        color: white;
+        opacity: 0.9;
+        padding: 0;
+        margin: 0 !important;
+
+        .about-bg-img {
+            display: block;
+            height: 65vh;
+            width: 100%;
+        }
+
+        .about-shoe-img {
+            display: block;
+            opacity: 80%;
+            position: absolute;
+            top: 16%;
+            right: 6%;
+            z-index: -1 !important;
+            width: 560px;
+            height: 470px;
+        }
+
+        .Hero-text {
+            width: 85%;
+            margin: 0;
+            position: absolute;
+            top: 53%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            h1 {
+                font-weight: 300;
+                font-size: 3rem;
+
+                span {
+                    color: #a80c0c;
+                    font-weight: 400;
+                }
+            }
+
+            .divider {
+                border: 1px solid rgb(255, 255, 255, 0.3);
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .pri-para {
+                .para {
+                    margin-top: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+/***********Body-Styling***********/
+main {
+
+    /***********Description-Styling***********/
+    .description {
+        margin: 8em 0 9em 0;
+        color: rgb(54, 54, 54);
+
+        .container {
+            max-width: 83%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            color: black;
+        }
+
+        p {
+            font-size: 0.97rem;
+            line-height: 1.3rem;
+        }
+    }
+
+    /***********Founder-Styling***********/
+    .Founder {
+        .container {
+            max-width: 82%;
+        }
+
+        .img-div {
+            .pri-img {
+                width: 100%;
+                height: auto;
+                padding: 0;
+            }
+
+            .sec-img {
+                display: none;
+            }
+        }
+
+        .founder-text {
+            width: 49%;
+            padding: 0 0 0 1rem;
+
+            h1 {
+                margin-top: 3rem;
+                font-weight: 400;
+                font-size: 3rem;
+                color: black;
+            }
+
+            p {
+                color: rgb(54, 54, 54);
+                font-size: 0.968rem;
+            }
+
+            .cta-button {
+                margin-top: 2em;
+
+                a {
+                    color: #fffdfd;
+                    background-color: $primary-color;
+                    font-size: 1.4rem;
+                    padding: .6rem 1.3rem;
+                }
+            }
+        }
+    }
+
+    /***********Statistics-Styling***********/
+    .Statistics {
+        width: 100%;
+        margin: 8rem 0rem;
+
+        .stats-div {
+            max-width: 1200px;
+
+            .stats {
+                width: 230px;
+                height: 230px;
+                border-radius: 50%;
+                box-shadow: 2px 2px 8px rgb(207, 187, 187);
+                padding-top: 3rem;
+                border: 13px solid rgb(185, 15, 15, 0.9);
+
+
+                .para1 {
+                    color: rgb(27, 25, 25);
+                    font-size: 2.6rem;
+                }
+
+                .para2 {
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    /***********Team-Styling***********/
+    .team {
+        .text-team.container {
+            max-width: 94% !important;
+
+            h1 {
+                font-weight: 400;
+                font-size: 3rem;
+                color: black;
+            }
+
+            p {
+                margin: 0.5rem 0 6.5rem 0;
+                color: rgb(54, 54, 54);
+                font-size: 0.965rem;
+            }
+        }
+
+
+        .img-div,
+        .img-div2,
+        .img-div3,
+        .img-div4 {
+            background: linear-gradient(rgb(192, 72, 72, 0.8), rgb(185, 15, 15, 0.9));
+            height: 430px;
+            padding: 0.6rem;
+            box-shadow: 2px 2px 8px rgb(141, 140, 140);
+
+            img {
+                width: 300px;
+            }
+
+            .name {
+                margin: 0.7rem 0 -0.2rem 0;
+                color: $secondary-color;
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+
+            .role {
+                margin-bottom: 1.3rem;
+                color: $secondary-color;
+                font-size: 1.1rem;
+
+            }
+
+            .social-media-icons {
+                width: 150px;
+
+                .google,
+                .facebook,
+                .linkedin,
+                .twitter {
+                    cursor: pointer;
+
+                    i {
+                        font-size: 1.4rem;
+                        padding-top: 0.73rem;
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    /***********Business-Partners-Styling***********/
+    .business-partners {
+        margin-top: 10rem;
+        background-color: #E5E5E5;
+        padding: 0rem 0 0.8rem 0;
+
+        img {
+            margin-top: 1.2rem;
+        }
+    }
+
+    /***********Newsletter-Styling***********/
+    .newsletter {
+        width: 100%;
+        height: auto;
+        margin: 150px 0 0 0;
+
+        .news-input {
+            border-radius: 100px 0px 0px 100px !important;
+            min-width: 150px;
+            min-width: 45px;
+            height: 45px;
+            font-size: 0.96rem;
+            padding-left: 1.5rem;
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .input-group-text {
+            color: black;
+            background: $primary-color;
+            border-radius: 0 100px 100px 0 !important;
+            min-width: 130px;
+            height: 45px;
+            min-width: 40px;
+            cursor: pointer;
+        }
+    }
+}
+
+/***********Footer Styling***********/
+.Footer {
+    margin: 150px 0 0 0;
+    width: 100%;
+    height: auto;
+    padding: 70px 0 0 0;
+    background-color: $secondary-color;
+    position: relative;
+
+    p {
+        color: #313030;
+    }
+
+    .footer_first_comp {
+        h1 {
+            span {
+                color: $primary-color;
+            }
+        }
+
+        .icons {
+            margin-left: -13.2rem;
+
+            i {
+                color: $primary-color;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+
+            .container {
+                max-width: 250px;
+            }
+        }
+    }
+
+    .footer_second_comp {
+        h3 {
+            color: #af0d0d;
+        }
+
+        li a {
+            color: #313030;
+        }
+    }
+
+    .footer_third_comp {
+        margin-top: -2em;
+
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    .footer_fourth_comp {
+        background: #dddbdb;
+        height: 60px;
+        padding-top: 1.5em;
+        font-size: 1em;
+
+        p {
+            color: #8d0f0f;
+        }
+    }
+}
+
+
+/***********Media-Queries***********/
+@media (max-width: 1600px) {
+    main {
+        .Founder {
+            .container {
+                max-width: 90%;
+            }
+
+            .founder-text {
+                h1 {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    main {
+        .Founder {
+            .founder-text {
+                h1 {
+                    margin-top: 1.5rem;
+                    font-size: 2.8rem;
+                }
+
+                p {
+                    color: rgb(54, 54, 54);
+                    font-size: 0.965rem;
+                }
+
+                .cta-button {
+                    margin-top: 1.5em;
+
+                    a {
+                        font-size: 1.25rem;
+                        padding: .6rem 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .team {
+            h1 {
+                font-size: 2.9rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+                color: rgb(83, 80, 80);
+            }
+
+            .img-div,
+            .img-div2,
+            .img-div3,
+            .img-div4 {
+                height: 370px;
+                padding: 0.45rem 0.55rem 0.55rem 0.55rem;
+
+                img {
+                    width: 250px;
+                }
+
+                .name {
+                    font-size: 1.2rem;
+                }
+
+                .role {
+                    font-size: 1.05rem;
+
+                }
+            }
+        }
+    }
+
+    .Footer {
+        .footer_first_comp {
+            .icons {
+                margin-left: -9.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    header {
+        .Hero-section {
+            .about-shoe-img {
+                top: 18%;
+                right: 6%;
+                width: 510px;
+                height: 420px;
+            }
+        }
+    }
+
+    main {
+        .Founder {
+            .container {
+                max-width: 90%;
+            }
+
+            .img-div {
+                .pri-img {
+                    display: none;
+                }
+
+                .sec-img {
+                    display: block;
+                    width: 95%;
+                    height: auto;
+                    padding: 0;
+                }
+            }
+
+            .founder-text {
+                padding: 0;
+
+                h1 {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        .team {
+
+            p {
+                margin: 0.5rem 0 4rem 0;
+            }
+
+            .img-con {
+                max-width: 740px;
+            }
+
+            .img-div,
+            .img-div2,
+            .img-div3,
+            .img-div4 {
+                height: 430px;
+                padding: 0.6rem;
+                margin-top: 1.7rem;
+
+                img {
+                    width: 300px;
+                }
+
+                .name {
+                    font-size: 1.3rem;
+                }
+
+                .role {
+                    font-size: 1.1rem;
+
+                }
+            }
+        }
+    }
+
+    .Footer {
+        .footer_first_comp {
+            .icons {
+                margin-left: -5.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    main {
+        .Founder {
+            .Founder-components {
+                text-align: center;
+            }
+
+            .container {
+                max-width: 78%;
+            }
+
+            .img-div {
+                text-align: center;
+
+                .sec-img {
+                    width: 70%;
+                    margin: auto !important;
+                }
+            }
+
+            .founder-text {
+                width: 100%;
+
+                h1 {
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    main {
+        .Statistics {
+            .stats-div {
+                max-width: 890px;
+
+                .stats {
+                    width: 200px;
+                    height: 200px;
+                    border: 10px solid rgb(185, 15, 15, 0.9);
+
+
+                    .para1 {
+                        font-size: 2.3rem;
+                    }
+
+                    .para2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .Footer {
+        padding: 60px 0 0 0;
+
+        .footer_first_comp {
+            .icons {
+                margin-left: -8.3rem;
+            }
+        }
+
+        .footer_third_comp {
+            margin-top: 2em;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        .Statistics {
+            .stats-div {
+                max-width: 750px;
+
+                .stats {
+                    width: 170px;
+                    height: 170px;
+                    border: 8px solid rgb(185, 15, 15, 0.9);
+
+
+                    .para1 {
+                        font-size: 2rem;
+                    }
+
+                    .para2 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        .Statistics {
+            .stats-div {
+                max-width: 500px;
+
+                .stats {
+                    width: 210px;
+                    height: 210px;
+                    border: 10px solid rgb(185, 15, 15, 0.9);
+                    margin-top: 2rem;
+
+
+                    .para1 {
+                        font-size: 2.4rem;
+                    }
+
+                    .para2 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .Footer {
+        .footer_first_comp {
+            .icons {
+                margin-left: -2.7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        .Hero-section {
+            .about-shoe-img {
+                display: none;
+            }
+        }
+    }
+
+    main {
+        .Founder {
+            .founder-text {
+                h1 {
+                    margin-top: 1.5rem;
+                    font-size: 2.4rem;
+                }
+
+                p {
+                    color: rgb(77, 76, 76);
+                    font-size: 0.93rem;
+                }
+            }
+
+            .img-div {
+                .sec-img {
+                    display: block;
+                    width: 90%;
+                }
+            }
+        }
+
+        .Statistics {
+            .stats-div {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .Footer {
+        padding: 50px 0 0 0;
+
+        .container {
+            max-width: 375px;
+        }
+
+        .footer_first_comp {
+            margin-bottom: 2rem;
+            text-align: center;
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .icons {
+                margin-left: -0.3rem;
+            }
+        }
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    header {
+        .navbar {
+            .navbar-links {
+                li {
+
+                    .help,
+                    .login {
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+
+                    .signup:hover {
+                        color: #E5E5E5;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .Founder {
+            .founder-text {
+                .cta-button {
+                    a:hover {
+                        background-color: #df0f0f;
+                    }
+                }
+            }
+        }
+    }
+
+    .Footer {
+        .footer_first_comp {
+            .icons {
+                i:hover {
+                    color: #8b0707;
+                }
+            }
+        }
+
+        .footer_second_comp {
+            li {
+                a:hover {
+                    color: #B90F0F;
+                }
+            }
+        }
+    }
+}
